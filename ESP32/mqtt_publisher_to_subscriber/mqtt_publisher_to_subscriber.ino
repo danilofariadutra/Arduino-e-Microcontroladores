@@ -11,9 +11,9 @@
 #define TIME_OUT 2000
 
 /* Name       Broker Address      TCP    TLS Port    WebSocket   Message    Persistent  Sign Up    Link
- *                                Port   Port        Port        Retention  Session     Requred    https://iot.eclipse.org/sandbox.html
- * Eclipse    mqtt.eclipse.org    1883   N/A         80, 443     YES        YES         NO  Link   https://test.mosquitto.org
- * Mosquitto  test.mosquitto.org  1883   8883, 8884  80          YES        YES         NO  Link   https://www.hivemq.com/downloads/
+ *                                Port   Port        Port        Retention  Session     Required    
+ * Eclipse    mqtt.eclipse.org    1883   N/A         80, 443     YES        YES         NO  Link   https://iot.eclipse.org/sandbox.html
+ * Mosquitto  test.mosquitto.org  1883   8883, 8884  80          YES        YES         NO  Link   https://test.mosquitto.org
  * HiveMQ     broker.hivemq.com   1883   N/A         8000        YES        YES         NO  Link   https://www.hivemq.com/downloads/
  * Flespi     mqtt.flespi.io      1883   8883        80, 443     YES        YES         YES Link   https://flespi.com/mqtt-broker
  * Dioty      mqtt.dioty.co       1883   8883        8080, 8880  YES        YES         YES Link   http://www.dioty.co
@@ -29,6 +29,7 @@
  * mqttUser = nome do usuário que você definir para envio de dados ao Broker
  * mqttPassword = senha do usuário que você definir para envio de dados ao Broker
  */
+ 
 const char* ssid = "PUT_YOUR_SSID_HERE";
 const char* password =  "PUT_YOUR_SSID_PASSWORD_HERE";
 const char* mqttServer = "test.mosquitto.org";
