@@ -1,6 +1,6 @@
 ### Envio de dados em MQTT
 
-Código exemplo de envio de dados de sensor DHT11 em protocolo MQTT, utilizando um ESP32.
+Código exemplo de recebimento de dados de sensor DHT11 em protocolo MQTT, obtidos pelo publisher utilizando um ESP32.
 
 ### Abaixo alguns Brokers gratuitos para uso
 
