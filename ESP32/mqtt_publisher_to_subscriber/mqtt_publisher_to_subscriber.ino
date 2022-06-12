@@ -29,13 +29,15 @@
  * mqttUser = nome do usuário que você definir para envio de dados ao Broker
  * mqttPassword = senha do usuário que você definir para envio de dados ao Broker
  */
- 
+
 const char* ssid = "PUT_YOUR_SSID_HERE";
 const char* password =  "PUT_YOUR_SSID_PASSWORD_HERE";
-const char* mqttServer = "test.mosquitto.org";
+
+const char* mqttServer = "broker.emqx.io";
 const int mqttPort = 1883;
-const char* mqttUser = "PUT_USER_HERE";
-const char* mqttPassword = "PUT_USER_PASSWORD_HERE";
+const char* mqttTopic = "info";
+const char* mqttUser = "user";
+const char* mqttPassword = "123456789";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -74,7 +76,7 @@ void loop() {
   Serial.println(message);
 
   // Envia a mensagem ao broker
-  client.publish("Sensors", message);
+  client.publish(mqttTopic, message);
   Serial.println("Mensagem enviada com sucesso...");
   
   //Incrementa o contador
